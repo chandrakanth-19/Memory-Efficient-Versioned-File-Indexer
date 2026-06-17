@@ -299,6 +299,12 @@ int main(int argc,char* argv[]){
 
         }
 
+        if (!word.empty()) {
+            for (char &c : word) {
+                c = tolower(c);
+            }
+        }
+
         versionedindex idx;
 
         if(qtype == "diff"){
